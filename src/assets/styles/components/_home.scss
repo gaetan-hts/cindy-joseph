@@ -1,0 +1,71 @@
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .bg-img {
+    background: url(../../img/hearder-img3.jpg) left/contain no-repeat;
+    flex: 1 0 30%;
+    min-width: 480px;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+
+    @media screen and (max-width: 977px) {
+      background: url(../../img/hearder-img.jpg) top/contain no-repeat;
+      min-width: none;
+    }
+
+    @media screen and (max-width: 720px) {
+      background: url(../../img/hearder-img2.jpg) top/contain no-repeat;
+      min-width: none;
+    }
+  }
+
+  .header-container {
+    display: flex;
+    flex: 1 0 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    @media screen and (max-width: 977px) {
+      margin: -70px 0 40px 0;
+    }
+
+    h1 {
+      position: relative;
+      font-family: $font1;
+      font-size: 4rem;
+      font-weight: 700;
+      color: $grey1;
+      width: 100%;
+      right: 57%;
+      white-space: nowrap;
+      margin-bottom: 40px;
+      transition: all 0.8s ease-in-out;
+
+      @media screen and (max-width: 977px) {
+        margin-left: 140%;
+        width: 50%;
+        top: -400px;
+      }
+
+      @media screen and (max-width: 720px) {
+        font-size: 2.5rem;
+        top: -300px;
+      }
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      width: 80%;
+      max-width: 450px;
+      margin-bottom: 30px;
+    }
+  }
+}

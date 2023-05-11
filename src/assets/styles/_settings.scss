@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Baskervville";
+  src: url(../fonts/Baskervville-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+$font1: Baskervville, cursive;
+$font2: Roboto, serif;
+$grey1: rgb(180, 180, 180);
+$black1: rgb(68, 68, 68);
+$black2: black;
+$white1: rgb(238, 238, 238);
+$white2: white;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: $font2;
+  background: $white1;
+}

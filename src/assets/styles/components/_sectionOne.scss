@@ -1,0 +1,48 @@
+.section-one-container {
+  display: flex;
+  overflow: hidden;
+
+  @media screen and (max-width: 977px) {
+    flex-wrap: wrap;
+  }
+
+  video {
+    display: block;
+    flex: 1 0 70%;
+    height: auto;
+    max-width: 70vw;
+    margin: 0 auto;
+
+    @media screen and (max-width: 977px) {
+      order: 1;
+      max-width: 100vw;
+    }
+  }
+
+  .left-content {
+    display: flex;
+    flex: 1 0 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    @media screen and (max-width: 977px) {
+      order: 2;
+      margin-top: 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      width: 80%;
+      letter-spacing: 1px;
+      max-width: 450px;
+      margin-bottom: 40px;
+    }
+  }
+}
