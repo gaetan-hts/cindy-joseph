@@ -23,6 +23,7 @@ const CarouselGallery = () => {
         showArrows={true}
         useKeyboardArrows={true}
         swipeable={true}
+        showThumbs={true}
         className="main-slide"
       >
         {slides.map((image, index) => (
