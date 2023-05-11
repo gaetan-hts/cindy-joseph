@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { useSelector } from "react-redux";
@@ -11,6 +11,26 @@ const CarouselGallery = () => {
 
   const slides = Object.values(carouselImages);
 
+  const [showThumbs, setShowThumbs] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const windowWidth = window.innerWidth;
+      setShowThumbs(windowWidth >= 600);
+    };
+
+    // Écoute du redimensionnement de la fenêtre
+    window.addEventListener("resize", handleResize);
+
+    // Vérification initiale de la taille de la fenêtre
+    handleResize();
+
+    // Nettoyage de l'écouteur d'événement lors du démontage du composant
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="gallery-container" id="scroll-gallery">
       {selectedLanguage === "fr" ? <h2>Galerie</h2> : <h2>Gallery</h2>}
@@ -20,10 +40,10 @@ const CarouselGallery = () => {
         infiniteLoop
         showIndicators={false}
         showStatus={false}
-        showArrows={true}
+        showArrows={showThumbs}
         useKeyboardArrows={true}
         swipeable={true}
-        showThumbs={true}
+        showThumbs={showThumbs}
         className="main-slide"
       >
         {slides.map((image, index) => (

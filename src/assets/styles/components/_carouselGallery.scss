@@ -1,5 +1,5 @@
 .gallery-container {
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -72,14 +72,18 @@
           display: none;
         }
       }
-      .slide img {
-        max-height: 500px;
-        object-fit: contain;
-        width: 100%;
-        height: auto;
-        background-color: $white1;
-        border-radius: 5px;
-        overflow: hidden;
+      .slider {
+        display: flex;
+        align-items: center;
+        .slide img {
+          max-height: 500px;
+          object-fit: contain;
+          width: 100%;
+          height: auto;
+          background-color: $white1;
+          border-radius: 5px;
+          overflow: hidden;
+        }
       }
     }
   }
