@@ -1,15 +1,15 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { useSelector } from "react-redux";
+import carouselImages from "./carouselImages";
 
 const CarouselGallery = () => {
   const selectedLanguage = useSelector(
     (state) => state.language.selectedLanguage
   );
 
-  const indexArray = Array.from({ length: 23 }, (_, i) => i + 1);
-  const slidesUrl = indexArray.map((index) => `img${index}.jpg`);
+  const slides = Object.values(carouselImages);
 
   return (
     <div className="gallery-container" id="scroll-gallery">
@@ -25,12 +25,8 @@ const CarouselGallery = () => {
         swipeable={true}
         className="main-slide"
       >
-        {slidesUrl.map((image, index) => (
-          <img
-            key={index}
-            src={`/sliders/${image}`}
-            alt={`Slider ${index + 1}`}
-          />
+        {slides.map((image, index) => (
+          <img key={index} src={image} alt={`Slider ${index + 1}`} />
         ))}
       </Carousel>
     </div>
