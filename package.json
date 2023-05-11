@@ -2,7 +2,7 @@
   "name": "cindy-joseph",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/",
+  "homepage": "https://gaetan-hts.github.io/cindy-joseph",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -13,6 +13,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "emailjs": "^4.0.1",
+    "github-pages": "^3.0.2",
     "i18next": "^22.4.15",
     "i18next-browser-languagedetector": "^7.0.1",
     "react": "^18.2.0",
