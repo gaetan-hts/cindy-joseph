@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../assets/img/spring1compressed.mpeg2";
+import video from "../assets/img/spring1compressed.mp4";
 import Button from "./Button";
 import { useSelector } from "react-redux";
 
