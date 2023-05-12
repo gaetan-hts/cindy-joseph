@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { useSelector } from "react-redux";
 import emailjs from "@emailjs/browser";
-// import { init } from "@emailjs/browser";
-// init(process.env.ID);
+import { init } from "@emailjs/browser";
+init(process.env.REACT_APP_ID);
 
 const ContactForm = () => {
   const selectedLanguage = useSelector(
@@ -16,8 +16,8 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_y4q20km",
-        "template_5ni7fmu",
+        "service_biaoamp",
+        "template_1ayez9a",
         form.current,
         process.env.REACT_APP_ID
       )
