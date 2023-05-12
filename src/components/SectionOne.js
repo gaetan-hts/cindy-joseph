@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../assets/img/spring1compressed.mp4";
+import video from "../assets/img/spring1compressed.mpeg2";
 import Button from "./Button";
 import { useSelector } from "react-redux";
 
@@ -38,7 +38,7 @@ const SectionOne = () => {
           scrollId="scroll-gallery"
         />
       </div>
-      <video controls autoPlay muted loop>
+      <video preload controls autoPlay muted loop>
         <source src={video} type="video/mp4" />
         Votre navigateur ne prend pas en charge la lecture de cette vidéo.
       </video>
