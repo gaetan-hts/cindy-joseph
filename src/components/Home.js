@@ -16,17 +16,18 @@ const Home = () => {
         {selectedLanguage === "fr" ? <h2>Bienvenue !</h2> : <h2>Welcome !</h2>}
         {selectedLanguage === "fr" ? (
           <p>
-            Danseuse interprète et chorégraphe, j'ai la chance de travailler
-            avec des compagnies de danse professionnelles internationales.
-            Alternant spectacles et cours de danse, j'ai acquis une expérience
-            variée en danse contemporaine, jazz, hybride ou encore hip-hop.
+            Passionnée par l'art de la danse depuis mon plus jeune âge, j'ai
+            consacré ma vie à perfectionner ma technique, ma musicalité, mon
+            sens artistique et mon expression scénique. Chaque collaboration
+            artistique et chaque moment sur scène m'enrichissent et attisent mon
+            désir de progresser, toujours plus.
           </p>
         ) : (
           <p>
-            As a performing dancer and choreographer, I have the opportunity to
-            work with international professional dance companies. Alternating
-            between shows and dance classes, I have acquired varied experience
-            in contemporary dance, jazz, hybrid, and hip-hop.
+            Passionate about the art of dance since a young age, I have
+            dedicated my life to perfecting my technique, musicality, artistic
+            sensibility, and stage expression. Each artistic collaboration and
+            moment on stage enriches me and fuels my desire to always progress.
           </p>
         )}
         <Button content="Contact" scrollId="scroll-contact" />

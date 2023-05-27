@@ -16,7 +16,7 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_biaoamp",
+        "service_46o8yg4",
         "template_1ayez9a",
         form.current,
         process.env.REACT_APP_ID
@@ -73,7 +73,7 @@ const ContactForm = () => {
         )}
         <form ref={form} onSubmit={sendEmail} className="form-content">
           <input
-            placeholder="Nom"
+            placeholder={selectedLanguage === "fr" ? "nom" : "name"}
             type="text"
             name="name"
             required
@@ -91,7 +91,11 @@ const ContactForm = () => {
           <textarea placeholder="Message" name="message" id="mess" />
         </form>
         <div className="formMessage"></div>
-        <input type="submit" value="Envoyer" className="submit-btn" />
+        <input
+          type="submit"
+          value={selectedLanguage === "fr" ? "Envoyer" : "Send"}
+          className="submit-btn"
+        />
       </div>
     </div>
   );

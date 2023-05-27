@@ -21,6 +21,9 @@ import img20 from "../assets/img/sliders/img20.jpg";
 import img21 from "../assets/img/sliders/img21.jpg";
 import img22 from "../assets/img/sliders/img22.jpg";
 import img23 from "../assets/img/sliders/img23.jpg";
+import img24 from "../assets/img/sliders/img24.jpg";
+import img25 from "../assets/img/sliders/img25.jpg";
+import img26 from "../assets/img/sliders/img26.jpg";
 
 export default {
   img1,
@@ -46,4 +49,7 @@ export default {
   img21,
   img22,
   img23,
+  img24,
+  img25,
+  img26,
 };
