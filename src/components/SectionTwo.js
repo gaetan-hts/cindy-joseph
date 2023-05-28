@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import imgCard1 from "../assets/img/img-card1.webp";
+import imgCard1 from "../assets/img/img-card1.jpeg";
 import imgCard2 from "../assets/img/img-card2.jpg";
 import imgCard3 from "../assets/img/img-card3.jpg";
 import { useSelector } from "react-redux";

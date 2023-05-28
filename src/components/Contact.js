@@ -71,7 +71,7 @@ const ContactForm = () => {
         ) : (
           <h2>Contact me</h2>
         )}
-        <form ref={form} onSubmit={sendEmail} className="form-content">
+        <form ref={form} className="form-content">
           <input
             placeholder={selectedLanguage === "fr" ? "nom" : "name"}
             type="text"
@@ -92,6 +92,7 @@ const ContactForm = () => {
         </form>
         <div className="formMessage"></div>
         <input
+          onClick={sendEmail}
           type="submit"
           value={selectedLanguage === "fr" ? "Envoyer" : "Send"}
           className="submit-btn"

@@ -21,9 +21,9 @@ import img20 from "../assets/img/sliders/img20.jpg";
 import img21 from "../assets/img/sliders/img21.jpg";
 import img22 from "../assets/img/sliders/img22.jpg";
 import img23 from "../assets/img/sliders/img23.jpg";
-import img24 from "../assets/img/sliders/img24.jpg";
-import img25 from "../assets/img/sliders/img25.jpg";
-import img26 from "../assets/img/sliders/img26.jpg";
+import img24 from "../assets/img/sliders/img24.jpeg";
+import img25 from "../assets/img/sliders/img25.jpeg";
+import img26 from "../assets/img/sliders/img26.webp";
 
 export default {
   img1,
