@@ -73,7 +73,7 @@ const ContactForm = () => {
         )}
         <form ref={form} className="form-content">
           <input
-            placeholder={selectedLanguage === "fr" ? "nom" : "name"}
+            placeholder={selectedLanguage === "fr" ? "Nom" : "Name"}
             type="text"
             name="name"
             required

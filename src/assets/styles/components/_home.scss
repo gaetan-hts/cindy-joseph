@@ -20,12 +20,35 @@
     @media screen and (max-width: 720px) {
       background: url(../../img/hearder-img.jpg) top/contain no-repeat;
       min-width: none;
+      height: 60vh;
+    }
+    @media screen and (max-width: 600px) {
+      background: url(../../img/hearder-img.jpg) top/contain no-repeat;
+      min-width: none;
       height: 50vh;
     }
     @media screen and (max-width: 500px) {
       background: url(../../img/hearder-img.jpg) top/contain no-repeat;
       min-width: 100%;
-      height: 35vh;
+      height: 50vh;
+    }
+    @media screen and (max-width: 450px) {
+      background: url(../../img/hearder-img.jpg) top/contain no-repeat;
+      min-width: 100%;
+      height: 50vh;
+      margin-bottom: -40px;
+    }
+    @media screen and (max-width: 400px) {
+      background: url(../../img/hearder-img.jpg) top/contain no-repeat;
+      min-width: 100%;
+      height: 50vh;
+      margin-bottom: -60px;
+    }
+    @media screen and (max-width: 335px) {
+      background: url(../../img/hearder-img.jpg) top/contain no-repeat;
+      min-width: 100%;
+      height: 50vh;
+      margin-bottom: -100px;
     }
   }
 

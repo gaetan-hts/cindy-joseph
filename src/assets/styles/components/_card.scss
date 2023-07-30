@@ -40,6 +40,15 @@
     transition: all 0.5s ease-in-out;
     text-align: center;
 
+    &:hover {
+      background: $black1;
+
+      i,
+      a {
+        color: $white2;
+      }
+    }
+
     a {
       display: block;
       width: 100%;
@@ -50,20 +59,11 @@
       letter-spacing: 3px;
       cursor: pointer;
       text-decoration: none;
-      transition: all 0.5s ease-in-out;
 
       i {
         font-size: 0.75rem;
         margin-left: 8px;
       }
-
-      &:hover {
-        color: $white2;
-      }
-    }
-
-    &:hover {
-      background: $black1;
     }
   }
 }
